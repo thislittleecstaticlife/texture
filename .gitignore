@@ -1,0 +1,9 @@
+# Precompiled std module
+std.pcm
+
+# Compiled object files
+*.o
+
+# executable
+texture
+
