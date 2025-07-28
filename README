@@ -1,0 +1,20 @@
+A low priority idea that I have been playing with, which may
+or may not evolve into something more complete: The correct 
+fundamental "unit of inspection" of software source code is
+the lexed token, not the individual ASCII or Unicode
+character, which would require an alternate binary encoding
+of a sequence of token headers plus contents, though it's
+not as if ASCII itself were not already a binary encoding.
+Nevertheless, such an alternate encoding could easily be
+devised which is seamlessly and bidirectionally convertible
+to and from a traditional textual representation of source
+code, such that no information or for that matter formatting
+need ever be gained or lost in the conversion. It could live
+alongside the textual source, "the truth", or it could be
+the native storage format of some hypethetical new source
+code editor. It doesn't matter either way, and yet iterating
+over tokens versus iterating over individual characters
+could fundamentally change how we conceptualize that which
+we are reading, even if there is no difference in the
+information being inspected. Only the lens would be
+different. The lens itself could change our perception
